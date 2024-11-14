@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pra Florist</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      /* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* baground belaakang */
+    background-image: url('image/bunga.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    color: #ffffff;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #d1d1d1;
+}
+
+.shop-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+    background-color: #ffffff;
+    color: #1a1f1e;
+}
+
+.image-content {
+    position: relative;
+}
+
+.bouquet-image {
+    width: 400px;
+    height: auto;
+    transform: translateX(20px);
+    box-shadow: -10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 2s forwards;
+    } 
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    </style>
+</head>
+<body>
+     <header class="header">
+        <nav class="navbar">
+            <div class="logo">Pra Florist</div>   
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main-content">
+        <div class="container-fluid fade-in-up">
+        <div class="text-content">
+            <h1>Elegant Blooms, Thoughtful Arrangements.</h1>
+            <p>At Pra Florist, we believe in the beauty of simplicity and the art of meaningful expression. Our fresh flowers and carefully crafted bouquets are designed to bring joy, elegance, and warmth to any occasion. Whether you're celebrating a special moment, expressing love, or simply brightening someone’s day, each of our arrangements is a piece of art made with love.</p>       
+            <p style="font-style: italic">Discover elegance with Pra Florist.</p>
+            <a href="produc.html"><button class="shop-button">Shop All Flowers</button></a>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
